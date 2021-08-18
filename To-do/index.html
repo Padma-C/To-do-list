@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://kit.fontawesome.com/678193b734.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/1.26.0/luxon.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="date-container">
+        <p class="dateText"></p>
+
+        <p class="timeText"></p>
+      </div>
+      <h1 class="heading-main">
+        Hey there, here is your list of things to do! Let's get started.
+      </h1>
+
+      <div class="todoForm">
+        <form class="textBox">
+          <input class="textBox-input" type="text" placeholder="" />
+          <button class="btn-plus"><i class="fas fa-plus"></i></button>
+        </form>
+        <ul class="listItems">
+          <!-- local storage data inserted heres-->
+        </ul>
+        <form class="footer">
+          <button class="btn-footer">Clear List</button>
+        </form>
+        <div class="image">
+          <img class="time-image" src="/assets/background.svg" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
